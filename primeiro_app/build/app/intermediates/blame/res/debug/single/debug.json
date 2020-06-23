@@ -12,12 +12,12 @@
         "source": "C:\\Users\\noteb\\.gradle\\caches\\transforms-2\\files-2.1\\12172bd92333b24a6ca38dc2aa663cea\\play-services-base-17.0.0\\res\\drawable-xxhdpi-v4\\googleg_standard_color_18.png"
     },
     {
-        "merged": "C:\\Users\\noteb\\OneDrive\\Documentos\\GitHub\\App-Loja-Virtual\\primeiro_app\\build\\app\\intermediates\\res\\merged\\debug\\layout_notification_action.xml.flat",
-        "source": "C:\\Users\\noteb\\.gradle\\caches\\transforms-2\\files-2.1\\765d948781557ca60ad60520b9d583b2\\core-1.1.0\\res\\layout\\notification_action.xml"
-    },
-    {
         "merged": "C:\\Users\\noteb\\OneDrive\\Documentos\\GitHub\\App-Loja-Virtual\\primeiro_app\\build\\app\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
         "source": "C:\\Users\\noteb\\.gradle\\caches\\transforms-2\\files-2.1\\12172bd92333b24a6ca38dc2aa663cea\\play-services-base-17.0.0\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
+    },
+    {
+        "merged": "C:\\Users\\noteb\\OneDrive\\Documentos\\GitHub\\App-Loja-Virtual\\primeiro_app\\build\\app\\intermediates\\res\\merged\\debug\\layout_notification_action.xml.flat",
+        "source": "C:\\Users\\noteb\\.gradle\\caches\\transforms-2\\files-2.1\\765d948781557ca60ad60520b9d583b2\\core-1.1.0\\res\\layout\\notification_action.xml"
     },
     {
         "merged": "C:\\Users\\noteb\\OneDrive\\Documentos\\GitHub\\App-Loja-Virtual\\primeiro_app\\build\\app\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_full_open_on_phone.png.flat",
