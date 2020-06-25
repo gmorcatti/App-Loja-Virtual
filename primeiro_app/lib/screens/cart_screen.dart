@@ -2,7 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:primeiro_app/models/cart_model.dart';
 import 'package:primeiro_app/models/user_models.dart';
 import 'package:primeiro_app/screens/login_screen.dart';
+import 'package:primeiro_app/screens/order_screen.dart';
 import 'package:primeiro_app/tiles/cart_tile.dart';
+import 'package:primeiro_app/widgets/cart_price.dart';
+import 'package:primeiro_app/widgets/discount_card.dart';
+import 'package:primeiro_app/widgets/ship_card.dart';
 import 'package:scoped_model/scoped_model.dart';
 
 class CartScreen extends StatelessWidget {
@@ -69,13 +73,30 @@ class CartScreen extends StatelessWidget {
           } else {
             return ListView(
               children: <Widget>[
-                Column(
-                  children: model.products.map(
-                    (product){
-                      return CartTile(product);
-                    }
-                  ).toList(),
-                )
+                SingleChildScrollView(
+                  child: Column(
+                    children: <Widget>[
+                      Column(
+                        children: model.products.map(
+                          (product){
+                            return CartTile(product);
+                          }
+                        ).toList(),
+                      ),
+                      DiscountCard(),
+                      ShipCard(),
+                      CartPrice(() async{
+                        String orderId = await model.finishOrder();
+                        if(orderId != null){
+                          Navigator.of(context).pushReplacement(
+                            MaterialPageRoute(builder: (context) => OrderScreen(orderId))
+                          );
+                        }
+                      }),
+                    ],
+                  ),
+                ),
+                
               ],
             );
           }
